@@ -1,18 +1,34 @@
 import React from 'react'
-import style from './app.module.css'
-import { TodoAdd } from './todoAdd/todoAdd'
-import { TodoList } from './todoList/todoList'
 
-function App() {
-  return (
-    <div className={style.App}>
-      <div className={style.content}>
-        <h1 className={style.title}>My Todos</h1>
-        <TodoAdd />
-        <TodoList />
-      </div>
-    </div>
-  )
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Layout } from './layout/layout'
+import { ProfilePage } from './pages/profilePage'
+import { TodoPage } from './pages/todoPage/todoPage'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { path: '/', element: <TodoPage /> },
+      {
+        path: '/profile',
+        element: <ProfilePage />,
+      },
+      {
+        path: '/password',
+        element: <div>password</div>,
+      },
+      {
+        path: '*',
+        element: <h2>404</h2>,
+      },
+    ],
+  },
+])
+
+const App = () => {
+  return <RouterProvider router={router} />
 }
 
 export default App

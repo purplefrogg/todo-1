@@ -1,0 +1,32 @@
+@import 'src/index.scss';
+
+.header {
+
+
+    background-color: $secondary-color;
+
+    .content {
+        margin: auto;
+        max-width: $max-width;
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            display: flex;
+            gap: 20px;
+
+            a {
+                color: $color;
+                text-decoration: none;
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

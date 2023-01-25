@@ -1,5 +1,5 @@
 import React from 'react'
-import { ITodo, todoStore } from '../store'
+import { ITodo, todoStore } from '../../../store'
 import style from './todoItem.module.css'
 import { observer } from 'mobx-react-lite'
 

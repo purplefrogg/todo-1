@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import { todoStore } from '../store'
 import style from './todoList.module.scss'
 import { observer } from 'mobx-react-lite'
 import { mapTodos } from './utils'
+import { todoStore } from '../../../store'
 
 export const TodoList = observer(() => {
   const { todos } = todoStore

@@ -1,4 +1,5 @@
 import { makeAutoObservable } from 'mobx'
+
 let initialTodos: ITodo[] = [
   {
     id: 1,
@@ -28,8 +29,9 @@ export type ITodo = {
 
 class TodoStore {
   todos: ITodo[] = initialTodos
-
-  constructor() {
+  name: string = ''
+  constructor(name: string) {
+    this.name = name
     makeAutoObservable(this)
   }
 
@@ -51,4 +53,4 @@ class TodoStore {
   }
 }
 
-export const todoStore = new TodoStore()
+export const todoStore = new TodoStore('todoStore')
