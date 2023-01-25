@@ -1,0 +1,43 @@
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.name {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  color: orange;
+}
+.discription {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.control {
+  display: flex;
+  gap: 20px;
+}
+
+.delete {
+  padding: 10px 15px;
+
+  color: red;
+
+  border: solid 1px red;
+
+  border-radius: 25px;
+}

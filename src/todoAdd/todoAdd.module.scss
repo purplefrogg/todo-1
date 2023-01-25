@@ -1,0 +1,47 @@
+.TodoAdd {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(55, 55, 55);
+  padding: 10px;
+}
+
+.inputs {
+  display: flex;
+  gap: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+
+    outline: none;
+
+    &:focus {
+      outline: 2px solid orange;
+    }
+  }
+}
+
+
+
+.submit {
+  align-self: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  padding: 0 10px;
+  color: white;
+
+  background-color: orange;
+  cursor: pointer;
+  outline: none;
+}

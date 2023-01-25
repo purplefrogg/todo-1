@@ -1,0 +1,34 @@
+.todoList {
+  background-color: rgb(55, 55, 55);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+
+  button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1.2rem;
+  }
+}
+
+
+.empty {
+  text-align: center;
+}
